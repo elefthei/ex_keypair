@@ -18,3 +18,9 @@ The package can be installed as:
           [applications: [:ex_keypair]]
         end
 
+## Example
+
+You can use ex_keypair as a command line application, by running:
+
+    mix escript.build
+    ./ex_keypair
