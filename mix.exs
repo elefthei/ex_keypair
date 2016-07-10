@@ -4,9 +4,10 @@ defmodule ExKeypair.Mixfile do
   def project do
     [app: :ex_keypair,
      version: "0.0.2",
+     escript: [main_module: ExKeypair],
      elixir: "~> 1.2",
      package: package(),
-     description: description(),     
+     description: description(),
      deps: deps]
   end
 
