@@ -24,3 +24,7 @@ You can use ex_keypair as a command line application, by running:
 
     mix escript.build
     ./ex_keypair
+
+Or use it as an Elixir module:
+
+    {public, private} = ExKeypair.keypair()

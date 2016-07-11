@@ -22,7 +22,7 @@ defmodule ExKeypair do
     {_, 0} = System.cmd "rm", ["-f", publicKey]
 
     # Return tuple for key pair
-    {priv, pub}
+    {pub, priv}
   end
 
   def main(args) do
