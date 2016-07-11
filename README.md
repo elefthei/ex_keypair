@@ -9,7 +9,7 @@ The package can be installed as:
   1. Add ex_keypair to your list of dependencies in `mix.exs`:
 
         def deps do
-          [{:ex_keypair, "~> 0.0.2"}]
+          [{:ex_keypair, "~> 0.0.3"}]
         end
 
   2. Ensure ex_keypair is started before your application:
