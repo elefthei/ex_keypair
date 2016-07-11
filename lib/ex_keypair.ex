@@ -9,8 +9,8 @@ defmodule ExKeypair do
     destPath = "/tmp/"
     publicKey = "ExPublicKey.pem"
     privateKey = "ExPrivateKey.pem"
-    {_, 0} = System.cmd "openssl", [ "genrsa", "-out", privateKey, "2048"]
-    {_, 0} = System.cmd "openssl", [ "rsa", "-pubout", "-in" , privateKey, "-out", publicKey ]
+    {_, 0} = System.cmd "openssl", [ "genrsa", "-out", privateKey, "2048"], [stderr_to_stdout: true]
+    {_, 0} = System.cmd "openssl", [ "rsa", "-pubout", "-in" , privateKey, "-out", publicKey ], [stderr_to_stdout: true]
     {:ok, priv} = File.read(privateKey)
     {:ok, pub} = File.read(publicKey)
 
