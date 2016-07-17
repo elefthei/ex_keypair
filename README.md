@@ -1,6 +1,7 @@
 # ExKeypair
 
-**RSA key pair generation in Elixir, using OpenSSL ports**
+**RSA key pair generation in Elixir, using OpenSSL ports (deprecated, moved to elefthei/krypto)**
+https://github.com/elefthei/krypto
 
 ## Installation
 
