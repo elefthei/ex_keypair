@@ -4,6 +4,8 @@ defmodule ExKeypair do
   Generate RSA key pair using openssl ports in Elixir.
   TODO: Skip FS and generate key pair in memory
   '''
+
+  import Hash
   def keypair do
 
     destPath = "/tmp/"
@@ -27,5 +29,10 @@ defmodule ExKeypair do
 
   def main(args) do
     IO.inspect keypair
+    IO.inspect Hash.md5("fooooooo")
+    IO.inspect Hash.sha224("fooooooo")
+    IO.inspect Hash.sha256("fooooooo")
+    IO.inspect Hash.sha384("fooooooo")
+    IO.inspect Hash.sha512("fooooooo")
   end
 end
